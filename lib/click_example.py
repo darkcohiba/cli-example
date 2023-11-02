@@ -40,7 +40,6 @@ import click
 #     cli()
 
 
-
 # getting a user input of a single character
 # click.echo('Continue? [yn] ', nl=False)
 # c = click.getchar()
@@ -59,3 +58,26 @@ import click
 #     for x in bar:
 #         print(f"sleep({x})...")
 #         time.sleep(x)
+
+
+# args and options
+# @click.command()
+# @click.option('--name', prompt=True, help='Your name')
+# @click.option('--size', type=click.Choice(['Small', 'Medium', 'Large', 'Extra Large'], case_sensitive=False),
+#               prompt=True, help='Your clothing size')
+# def get_user_info(name, size):
+#     # Output the collected information
+#     click.echo(f"Name: {name}, Selected size: {size}")
+
+# get_user_info()
+
+
+# multiple choice options
+# @click.command()
+# @click.option("--size", prompt=True, multiple=True, type=click.Choice(['Small', 'Medium', 'Large', 'Extra Large'], case_sensitive=False))
+# def select_size(size):
+#     options = list(size)
+#     # size = click.prompt("Select your size", type=click.Choice(['Small', 'Medium', 'Large', 'Extra Large'], case_sensitive=False))
+#     click.echo(f"You selected: {options}")
+
+# select_size()
