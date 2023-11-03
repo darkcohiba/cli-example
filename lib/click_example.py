@@ -5,6 +5,8 @@ import click
 #     click.echo(click.style('Hello World!', fg='yellow', bg='blue', bold=True))
 #     click.secho('HELLO!', bold=True)
 
+# hello()
+
 
 # groups
 # two ways to create groups, one with the click decorator and one with the group as the decorator
