@@ -4,7 +4,7 @@
 
 # pprint(":vampire:")
 
-from rich.console import Console
+# from rich.console import Console
 # console = Console()
 
 
@@ -16,7 +16,7 @@ from rich.console import Console
 # # output [11:59:36] Hello, World!
 
 # We can also set a width and a style variable and use it on console
-console = Console(width=20)
+# console = Console(width=20)
 # style = "bold white on blue"
 # console.print("Rich", style=style)
 # console.print("Rich", style=style, justify="left")
@@ -24,8 +24,15 @@ console = Console(width=20)
 # console.print("Rich", style=style, justify="right")
 
 # taking input! 
-name = console.input("What is [i]your[/i] [bold red]name[/]? :smiley: ")
-console.print(f'Hello {name}', style='italic white on black', justify='center')
+# name = console.input("What is [i]your[/i] [bold red]name[/]? :smiley: ")
+# console.print(f'Hello {name}', style='italic white on black', justify='center')
+
+# progress bar
+import time
+from rich.progress import track
+
+for _ in track(range(20), description="Processing..."):
+    time.sleep(1) 
 
 
 
