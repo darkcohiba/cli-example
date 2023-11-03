@@ -8,6 +8,7 @@ inquirer = "*"
 fire = "*"
 click = "*"
 pygame = "*"
+rich = "*"
 
 [dev-packages]
 
