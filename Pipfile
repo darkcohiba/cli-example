@@ -9,6 +9,7 @@ fire = "*"
 click = "*"
 pygame = "*"
 rich = "*"
+icecream = "*"
 
 [dev-packages]
 
