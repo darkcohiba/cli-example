@@ -5,8 +5,8 @@ from icecream import ic
 # ic(num1)
 # output ic| num1: 2
 
-# def greeting(name):
-#     return f'Hello {name}'
+def greeting(name):
+    return f'Hello {name}'
 
 # ic(greeting("Sam"))
 # ic| greeting("Sam"): 'Hello Sam'
@@ -23,5 +23,21 @@ from icecream import ic
 # ic(check_weight(100, 94))
 # output ic| check_weight(100, 94): 'Good Too'
 
+def foo():
+    name = input("What is your name ")
+    ic(name)
+    greeting(name)
 
+    if 1 > 2:
+        name = input("What is your name ")
+        ic(name)
+        greeting(name)
+        ic()
+    else:
+        name = input("What is your name else ")
+        ic(name)
+        ic(greeting(name))
+        ic()
+
+foo()
 
