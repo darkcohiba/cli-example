@@ -26,7 +26,7 @@ questions = [
 ]
 
 # call our questions through the prompt and add the green passion theme!
-answers = inquirer.prompt(questions, theme=GreenPassion())
+answers = inquirer.prompt(questions)
 # to access the answers we can use block notation.
 print(f"Name: {answers['name']}\n")
 print(f"Excited: {answers['continue']}\n")
